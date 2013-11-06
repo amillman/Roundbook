@@ -4,12 +4,15 @@
   "name": "Roundbook",
   "description": "New look to Facebook - lots and lots of circles ",
   "version": "1.0",
+  "icons": {
+      "128":"roundbook-logo.png"
+  },
 
   "content_scripts": [
     {
       "matches": ["*://*.facebook.com/*"],
       "css": ["roundbook.css"],
-      "js": ["loader.js", "jquery-1.10.2.min.js", "jquery-ui-1.10.3.min.js"]
+      "js": ["jquery-1.10.2.min.js", "jquery-ui-1.10.3.min.js", "loader.js"]
     }
   ]
 }
