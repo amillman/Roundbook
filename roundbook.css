@@ -1,0 +1,322 @@
+/*=home background
+-----------*/
+body {
+  background:#eeeeee;
+}
+
+/*=side list borders
+-----------*/
+.uiSideNav .item, 
+.uiSideNav .subitem {
+	border-bottom:none;
+}
+
+/*------------------------------------*/
+
+/*=navbar - remove gradient
+-----------*/
+.hasSmurfbar #blueBarHolder #blueBar {
+    background-image:none;
+  	opacity:0.9;
+}
+
+
+/*=navbar - remove bottom border
+-----------*/
+.hasSmurfbar #blueBarHolder #blueBar:after {
+  background-image:none;
+}
+
+
+/*=logo
+-----------*/
+html #pageLogo._5bfh a {
+  	background-image:url("https://dl.dropboxusercontent.com/u/20880745/facebook-logo.png");
+  	background-size:30px 30px;
+  	background-position:0 4px;
+}
+
+/*=navigation div (search bar attributes)
+-----------*/
+._585- {
+    background-color:transparent;
+  	-webkit-box-shadow:none;
+	border-radius:5px;
+}
+
+/*=search bar "Search for people, places, and things"
+-----------*/
+._5861 ._586j {
+  	color:white;
+  	font-size:16px;
+}
+
+._5861 ._586j:after {
+    /*content:" and poop";*/
+}
+
+/*=search bar predictions (grey text) resize
+-----------*/
+._5861 ._586h {
+  	font-size:16px;
+}
+
+/*=search bar user input
+-----------*/
+._5861 ._586i {
+  	color:white;
+  	font-size:16px;
+}  
+  
+
+/*=text 'Home', 'Name'
+-----------*/
+._5bfg #pageNav .navLink, ._5bfg #pageNav .navItem .navLink{
+    color:white;
+    font-weight:normal;
+    font-size:13px;
+ 	padding-top:1px;
+}
+
+/*=search suggestions
+-----------*/
+._5b71 ._50c9 { 
+    border:1 px solid #d9d9d9;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    border-radius:0;
+    margin-top:8px;
+}        
+
+/*=search button
+-----------*/
+._585_ {
+  	background:none;
+  	/*background-image:url("https://dl.dropboxusercontent.com/u/20880745/search-icon.png")!important;
+    background-size:15px 15px!important;
+  	background-repeat:no-repeat;
+  	background-position:1px 1px!important;*/
+}
+  
+
+/*=red notification "jewel"
+-----------*/
+._5bfg .fbJewel .jewelCount span {
+  	height:16px;
+    min-width:16px;
+  	background:none;
+    background-color: #e74c3c;
+    box-shadow:none;
+    text-shadow:none;
+  	border-radius:8px;
+}
+ 
+/*=friend requests icon
+-----------*/
+._5bfw #fbRequestsJewel a.jewelButton, 
+._5bfw #fbRequestsJewel a.jewelButton:focus, 
+._5bfw #fbRequestsJewel a.jewelButton:hover, 
+._5bfw #fbRequestsJewel.hasNew a.jewelButton, 
+._5bfw .notifNegativeBase #fbRequestsJewel.openToggler a.jewelButton, 
+._5bfw .notifNegativeBase #fbRequestsJewel.openToggler a.jewelButton:hover,
+._5bfw #fbRequestsJewel a.jewelButton:active {
+    background-image:url("https://dl.dropboxusercontent.com/u/20880745/requests-icon.png")!important;
+    background-size:22px 22px!important;
+  	background-position:6px 3px!important;
+}
+
+/*=messages icon
+-----------*/
+._5bfw #fbMessagesJewel a.jewelButton,
+._5bfw #fbMessagesJewel a.jewelButton:focus, 
+._5bfw #fbMessagesJewel a.jewelButton:hover, 
+._5bfw #fbMessagesJewel.hasNew a.jewelButton, 
+._5bfw .notifNegativeBase #fbMessagesJewel.openToggler a.jewelButton, 
+._5bfw .notifNegativeBase #fbMessagesJewel.openToggler a.jewelButton:hover,
+._5bfw #fbMessagesJewel a.jewelButton:active {
+    background-image:url("https://dl.dropboxusercontent.com/u/20880745/messages-icon.png")!important;
+    background-size:25px 25px!important;
+  	background-position:6px 3px!important;
+}
+    
+/*=notif. icon
+-----------*/
+._5bfw #fbNotificationsJewel a.jewelButton, 
+._5bfw #fbNotificationsJewel a.jewelButton:focus, 
+._5bfw #fbNotificationsJewel a.jewelButton:hover, 
+._5bfw #fbNotificationsJewel.hasNew a.jewelButton, 
+._5bfw .notifNegativeBase #fbNotificationsJewel.openToggler a.jewelButton, 
+._5bfw .notifNegativeBase #fbNotificationsJewel.openToggler a.jewelButton:hover,
+._5bfw #fbNotificationsJewel a.jewelButton:active {
+    background-image:url("https://dl.dropboxusercontent.com/u/20880745/notifications-icon.png")!important;
+    background-size:30px 30px!important;
+  	background-position:1px 0px!important;
+}
+ 
+
+/*=privacy icon
+-----------*/
+.hasSmurfbar ._59fc ._59fb, 
+.hasSmurfbar ._59fc:hover ._59fb, 
+.hasSmurfbar .openToggler ._59fc ._59fb {
+  	background-image: url("https://dl.dropboxusercontent.com/u/20880745/padlock-icon.png")!important;
+  	background-size:13px 13px!important;
+  	background-position: 0px 0px!important;
+}
+
+
+/*=settings icon
+-----------*/
+#pageNav._5bfw #navAccount #navAccountLink .menuPulldown,
+#pageNav._5bfw #navAccount #navAccountLink:hover .menuPulldown,
+#pageNav._5bfw #navAccount.openToggler #navAccountLink .menuPulldown {
+ 	background-image: url("https://dl.dropboxusercontent.com/u/20880745/settings-icon.png")!important;
+  	background-size:12px 12px!important;
+  	background-position: 0px 1px!important;
+  	
+}
+
+
+/*------------------------------------*/
+
+
+/*=buttons in general
+-----------*/
+.uiButton {
+	background:#d9d9d9;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    font-weight: normal;
+    border-radius: 5px;
+}
+
+/*=friend request button
+-----------*/
+.uiButton.FriendRequestAdd {
+	background:#70AA75;
+  	color:white;
+}
+
+/*=confirm button
+-----------*/
+.uiButtonConfirm {
+  	background:#4c66a4;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    font-weight: normal;
+    border-radius: 5px;
+}
+  
+
+/*------------------------------------*/
+
+  
+/*=profile icons
+-----------*/
+._s0, .profilePhoto, 
+.storyContent .UFIActorImage._54ru,
+._4lh ._51wa .img,
+._8o .img,
+._8o._8r.img._33h,
+._42fz .pic,
+._55lt img,
+._29h._29l .img {
+	border-radius:100px;
+    border:none;
+}
+      
+/*=timeline profile picture
+-----------*/
+#fbTimelineHeadline .profilePicThumb .img {
+    border-radius:100px;
+}
+
+/*=removal of any box outlines that surrounded profile icons
+-----------*/
+._4lh ._519e:after,
+._4lh ._51wa:after,
+._4lh .timelineUnitContainer .UFIComment .UFIImageBlockImage:after,
+._4lh .timelineUnitContainer .UFIReplyActorPhotoWrapper:after,
+#fbTimelineHeadline .profilePicThumb#profile_pic_education, 
+#fbTimelineHeadline .photoContainer .profilePicThumb {
+  	background:none;
+}
+
+/*=make thumbnails normal again
+-----------*/
+.shareRedesign .shareMediaVideo .img,
+.shareMediaPhoto.img,
+.photoWrap .img,
+.external.photoLink .img,
+.art_grid_inner .music_artwork.img,
+.uiVideoThumb .img,
+.scaledImageFitWidth.img,
+.uiPhotoThumb .img {
+	border-radius:0;
+}
+  
+/*=timeline friend name spaces
+-----------*/  
+.fbTimelineFriendsBoxLarge .friendName,
+.fbTimelineFriendsBoxLarge .friendName {
+    background:none!important;
+    text-align:center;
+}
+
+/*=timeline friend names
+-----------*/    
+.mas {
+    padding-bottom:20px;
+}
+
+/*------------------------------------*/
+
+/*=side chatbar background
+-----------*/ 
+.fbChatSidebar, 
+.fbSidebarGripper div,
+.fbChatSidebar ._554p {
+	background-color:#4e4e4e!important;
+}
+  
+._42fz a:hover,  
+._42fz a.selected,
+div.fbChatSidebarDropdown .uiCloseButton:hover,
+._4oes .button:hover,
+.fbChatSidebar .fbFeedTicker .tickerStoryClickable:hover {
+	background-color:#4e4e4e!important;  
+}
+
+/*=side chatbar text 
+-----------*/ 
+._6nw._5c81 ._42fz a, 
+._42fz a,
+.fbChatSidebar ._554p,
+.fbFeedTicker .fbFeedTickerStory .uiStreamPassive,
+.fbFeedTicker .fbFeedTickerStory .tickerAttachmentBodyText,
+.fbFeedTicker .tickerStoryClickable a, 
+.fbFeedTicker .tickerStoryClickable .passiveName, 
+.fbFeedTicker .tickerStoryClickable .token {
+    color:#ffffff!important;
+}
+
+
+/*=remove excess borders in sidebar gripper and bottom options butons
+-----------*/ 
+._4oes .button,
+.fbSidebarGripper{
+	-webkit-box-shadow:none!important;
+    -moz-box-shadow:none!important;
+    box-shadow:none!important;
+    border:none!important;
+}
+  
+/*=settings button (at bottom)
+-----------*/ 
+div.fbChatSidebarDropdown .uiCloseButton {
+  	background-image: url("https://dl.dropboxusercontent.com/u/20880745/settings-icon.png")!important;
+	background-size: 12px 12px!important;
+	background-position: 7px 6px!important;
+}
