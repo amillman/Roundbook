@@ -2,14 +2,13 @@
 -----------*/
 body {
   background:#eeeeee;
-  opacity:0;
 }
 
 /*=side list borders
 -----------*/
 .uiSideNav .item, 
 .uiSideNav .subitem {
-	border-bottom:none;
+	border-bottom:none!important;
 }
 
 /*------------------------------------*/
@@ -17,10 +16,9 @@ body {
 /*=navbar - remove gradient
 -----------*/
 .hasSmurfbar #blueBarHolder #blueBar {
-    background-image:none;
+    background-image:none!important;
   	opacity:0.9;
 }
-
 
 /*=navbar - remove bottom border
 -----------*/
@@ -34,7 +32,7 @@ body {
 html #pageLogo._5bfh a {
   	background-image:url("https://dl.dropboxusercontent.com/u/20880745/facebook-logo.png");
   	background-size:30px 30px;
-  	background-position:0 4px;
+  	background-position:0 3px;
 }
 
 /*=navigation div (search bar attributes)
@@ -82,7 +80,7 @@ html #pageLogo._5bfh a {
 /*=search suggestions
 -----------*/
 ._5b71 ._50c9 { 
-    border:1 px solid #d9d9d9;
+    border:1px solid #d9d9d9;
     box-shadow:none;
     -webkit-box-shadow:none;
     border-radius:0;
@@ -241,8 +239,13 @@ html #pageLogo._5bfh a {
 ._4lh .timelineUnitContainer .UFIComment .UFIImageBlockImage:after,
 ._4lh .timelineUnitContainer .UFIReplyActorPhotoWrapper:after,
 #fbTimelineHeadline .profilePicThumb#profile_pic_education, 
-#fbTimelineHeadline .photoContainer .profilePicThumb {
-  	background:none;
+#fbTimelineHeadline .photoContainer .profilePicThumb,
+._4lh ._519e:after, 
+._4lh ._51wa:after,
+._4lh .timelineUnitContainer .UFIComment .UFIImageBlockImage:after, 
+._4lh .timelineUnitContainer .UFIReplyActorPhotoWrapper:after,
+.bubbles ._50dw .profileLink:after {
+  	background:none!important;
 }
 
 /*=make thumbnails normal again
@@ -270,6 +273,7 @@ html #pageLogo._5bfh a {
 -----------*/    
 .mas {
     padding-bottom:20px;
+    text-shadow:0px 0px 10px rgba(0,0,0,1);
 }
 
 /*------------------------------------*/
@@ -286,8 +290,10 @@ html #pageLogo._5bfh a {
 ._42fz a.selected,
 div.fbChatSidebarDropdown .uiCloseButton:hover,
 ._4oes .button:hover,
-.fbChatSidebar .fbFeedTicker .tickerStoryClickable:hover {
-	background-color:#4e4e4e!important;  
+.fbChatSidebar .fbFeedTicker .tickerStoryClickable:hover,
+div._5qth .uiCloseButton:hover, 
+._4oes .toggle:hover {
+	background-color:#444444!important;  
 }
 
 /*=side chatbar text 
@@ -303,6 +309,12 @@ div.fbChatSidebarDropdown .uiCloseButton:hover,
     color:#ffffff!important;
 }
 
+/*="MOBILE" / "WEB" text next to green dots 
+-----------*/ 
+._42fz ._5t30 {
+    color:#a8a8a8;
+}
+
 
 /*=remove excess borders in sidebar gripper and bottom options butons
 -----------*/ 
@@ -313,11 +325,96 @@ div.fbChatSidebarDropdown .uiCloseButton:hover,
     box-shadow:none!important;
     border:none!important;
 }
-  
+
+                                        
+/*=search bar (at bottom)
+-----------*/ 
+.fbChatSidebar .fbChatTypeahead .textInput {
+    background-image: url("https://dl.dropboxusercontent.com/u/20880745/search-icon.png")!important;
+	background-size: 12px 12px!important;
+	background-position: 5px 6px!important;
+}      
+                        
 /*=settings button (at bottom)
 -----------*/ 
-div.fbChatSidebarDropdown .uiCloseButton {
+div._5qth .uiCloseButton {
   	background-image: url("https://dl.dropboxusercontent.com/u/20880745/settings-icon.png")!important;
 	background-size: 12px 12px!important;
 	background-position: 7px 6px!important;
+}
+  
+/*=exit button (at bottom)
+-----------*/ 
+._4oes .toggle {
+  	background-image: url("https://dl.dropboxusercontent.com/u/20880745/exit-icon.png")!important;
+	background-size: 12px 12px!important;
+	background-position: 7px 6px!important;
+}
+  
+  
+  
+
+    
+/*=chatbox background
+-----------*/ 
+.bubbles .fbDockChatTabFlyout .fbNubFlyoutBody,
+.bubbles div._511n {
+	background-color: white;
+}
+
+/*=padding between sent vs received bubble
+-----------*/           
+.bubbles ._50dw {
+    margin-top:10px;
+    margin-bottom:10px; 
+}      
+
+/*=remove name displays in group chat
+-----------*/    
+._50x4 ._50x5 {display:none;}
+      
+/*=chatbox sender message bubbles - must be placed before 
+other person styling so text colors are correct
+-----------*/ 
+.bubbles ._kso,
+.bubbles ._kso:before {
+    background:none;
+    border:none!important;
+	box-shadow:none!important;
+	text-shadow:none!important;
+    color:white!important;
+    background-color: rgb(102,133,206);
+}
+
+.bubbles ._kso {
+    margin-top:2px!important;
+    margin-bottom:2px!important;
+    padding:6px!important; /*padding within chat bubbles are shared for both sent and received messages */
+    padding-left:8px!important;
+    padding-right:8px!important;
+}
+
+.bubbles ._kso:after {
+    background:white;
+}
+
+/*=chatbox other person message bubbles
+-----------*/ 
+.bubbles ._50kd ._kso,
+.bubbles ._50kd ._kso:before {
+    background:none;
+    border:none;
+	box-shadow:none;
+	text-shadow:none;
+    color:black!important;
+    background-color: rgb(230, 230, 230); 
+}
+
+.bubbles ._50dw._50kd {
+    margin-top:1px!important;
+    margin-bottom:1px!important;
+}
+
+.bubbles ._50kd ._kso:after {
+    background:white; 
 }
